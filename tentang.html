@@ -111,6 +111,30 @@
     <p>© 2026 J-TECH Digital & Tech Service — Solusi Teknologi & Kreatif</p>
 </footer>
 
+<!-- Modal Popup Konsultasi -->
+<div class="modal-overlay" id="consultModal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3>💬 Hubungi Kami</h3>
+      <span class="close-btn" onclick="hideModal()">&times;</span>
+    </div>
+    <div class="modal-body">
+      <p>Pilih platform favorit Anda untuk berkonsultasi:</p>
+      <div class="social-buttons">
+        <button class="social-btn wa" onclick="openWhatsApp()">
+          <span class="material-icons">chat</span> WhatsApp
+        </button>
+        <button class="social-btn ig" onclick="openInstagram()">
+          <span class="material-icons">photo_camera</span> Instagram
+        </button>
+        <button class="social-btn email" onclick="openEmail()">
+          <span class="material-icons">email</span> Email
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script src="script.js"></script>
 </body>
 </html>

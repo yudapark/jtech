@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking & Konsultasi J-TECH</title>
+    <meta name="description" content="Form booking online untuk service laptop, desain grafis, editing video, dan template digital J-TECH.">
+    <link rel="icon" type="image/png" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📞%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+<button class="toggle-btn" id="darkModeToggle">🌙</button>
+
+<a href="https://wa.me/6281541131863?text=Halo%20J-TECH%2C%20saya%20ingin%20konsultasi" class="floating-wa" target="_blank">
+    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.514 1.06 3.584l-1.084 3.768 3.884-1.046c1.052.583 2.23.891 3.418.892 3.18 0 5.766-2.586 5.766-5.766 0-3.18-2.586-5.767-5.766-5.767zm0 10.332c-.921 0-1.82-.25-2.599-.714l-2.867.772.77-2.793c-.497-.794-.763-1.698-.762-2.617 0-2.611 2.124-4.735 4.735-4.735s4.735 2.124 4.735 4.735c-.001 2.61-2.125 4.735-4.736 4.735z'/%3E%3C/svg%3E" alt="WA">
+    <span>Chat</span>
+</a>
+
+<header class="main-header">
+    <div class="header-container">
+        <div class="logo-area">
+            <a href="index.html" class="logo-link"><h1 class="logo">J-TECH</h1></a>
+            <p class="tagline">Digital & Tech Service</p>
+        </div>
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-link">Beranda</a>
+            <a href="layanan.html" class="nav-link">Layanan</a>
+            <a href="portofolio.html" class="nav-link">Portofolio</a>
+            <a href="tentang.html" class="nav-link">Tentang</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="kontak.html" class="nav-link btn-contact active">Booking</a>
+        </nav>
+    </div>
+</header>
+
+<section class="page-title">
+    <h1>Booking & Konsultasi</h1>
+    <p>Isi form di bawah untuk mendapatkan penawaran terbaik dari kami</p>
+</section>
+
+<section class="contact-section">
+    <div class="contact-grid">
+        <div class="contact-info">
+            <h2>Hubungi Kami Langsung</h2>
+            <div class="info-item">
+                <span class="material-icons">chat</span>
+                <div><strong>WhatsApp</strong><br>+62 815-4113-1863</div>
+            </div>
+            <div class="info-item">
+                <span class="material-icons">photo_camera</span>
+                <div><strong>Instagram</strong><br>@jtech.official</div>
+            </div>
+            <div class="info-item">
+                <span class="material-icons">email</span>
+                <div><strong>Email</strong><br>jtech@digital.com</div>
+            </div>
+            <div class="info-item">
+                <span class="material-icons">schedule</span>
+                <div><strong>Jam Operasional</strong><br>Senin - Sabtu: 09:00 - 21:00<br>Minggu: 10:00 - 17:00</div>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h2>Form Booking Online</h2>
+            <form id="bookingForm" action="https://formspree.io/f/xzdyaabk" method="POST">
+                <div class="form-group">
+                    <label>Nama Lengkap</label>
+                    <input type="text" name="name" required placeholder="Contoh: Ahmad Fauzi">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" required placeholder="email@example.com">
+                </div>
+                <div class="form-group">
+                    <label>Nomor WhatsApp</label>
+                    <input type="tel" name="phone" required placeholder="081234567890">
+                </div>
+                <div class="form-group">
+                    <label>Jenis Layanan</label>
+                    <select name="service" required>
+                        <option value="">Pilih layanan...</option>
+                        <option value="Service Laptop">Service Laptop</option>
+                        <option value="Install Ulang OS">Install Ulang OS</option>
+                        <option value="Desain Grafis">Desain Grafis</option>
+                        <option value="Editing Video">Editing Video</option>
+                        <option value="Template Digital">Template Digital</option>
+                        <option value="Anti Virus">Anti Virus & Security</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Detail Permintaan</label>
+                    <textarea name="message" rows="4" placeholder="Jelaskan masalah laptop atau keinginan desain Anda..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Kirim Permintaan →</button>
+                <p class="form-note">*Kami akan menghubungi Anda dalam 1x24 jam via WhatsApp</p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Google Maps Location -->
+<section class="map-section">
+    <h2>Lokasi Kami</h2>
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521184722815!2d106.822705!3d-6.194456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f539d72f3c81%3A0x27f6b3d8a0e2e8c!2sJakarta!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <p class="map-note">📍 Layanan online untuk seluruh Indonesia | Service laptop area Jabodetabek</p>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-col"><h3>J-TECH</h3><p>Digital & Tech Service</p></div>
+        <div class="footer-col"><h4>Layanan</h4><a href="layanan.html">Service Laptop</a><a href="layanan.html">Desain Grafis</a><a href="layanan.html">Editing Video</a></div>
+        <div class="footer-col"><h4>Kontak</h4><p>📱 @jtech.official</p><p>💬 +62 815-4113-1863</p><p>📧 jtech@digital.com</p></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 J-TECH Digital & Tech Service</p></div>
+</footer>
+
+<script src="script.js"></script>
+<script>
+// Form submission alert
+document.getElementById('bookingForm')?.addEventListener('submit', function(e) {
+    // Formspree akan menangani pengiriman, tapi kita kasih notifikasi
+    setTimeout(() => {
+        alert('✓ Permintaan Anda telah dikirim! Kami akan menghubungi Anda dalam 1x24 jam.');
+    }, 100);
+});
+</script>
+</body>
+</html>

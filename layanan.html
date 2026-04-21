@@ -3,95 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>J-TECH | Layanan - Digital & Tech Service</title>
+    <title>Layanan J-TECH | Service Laptop & Digital Kreatif</title>
+    <meta name="description" content="Layanan lengkap J-TECH: service laptop, install ulang, desain grafis, editing video, template digital. Harga mulai Rp25.000.">
+    <link rel="icon" type="image/png" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E💻%3C/text%3E%3C/svg%3E">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 
-<button class="toggle-btn" id="darkModeToggle" aria-label="Toggle Dark/Light Mode">🌙</button>
+<button class="toggle-btn" id="darkModeToggle">🌙</button>
 
-<!-- HEADER -->
+<a href="https://wa.me/6281541131863?text=Halo%20J-TECH%2C%20saya%20ingin%20konsultasi" class="floating-wa" target="_blank">
+    <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.514 1.06 3.584l-1.084 3.768 3.884-1.046c1.052.583 2.23.891 3.418.892 3.18 0 5.766-2.586 5.766-5.766 0-3.18-2.586-5.767-5.766-5.767zm0 10.332c-.921 0-1.82-.25-2.599-.714l-2.867.772.77-2.793c-.497-.794-.763-1.698-.762-2.617 0-2.611 2.124-4.735 4.735-4.735s4.735 2.124 4.735 4.735c-.001 2.61-2.125 4.735-4.736 4.735z'/%3E%3C/svg%3E" alt="WA">
+    <span>Chat</span>
+</a>
+
 <header class="main-header">
     <div class="header-container">
         <div class="logo-area">
-            <a href="index.html" class="logo-link">
-                <h1 class="logo">J-TECH</h1>
-            </a>
-            <p class="tagline">Digital & Tech Service for Modern Generation</p>
+            <a href="index.html" class="logo-link"><h1 class="logo">J-TECH</h1></a>
+            <p class="tagline">Digital & Tech Service</p>
         </div>
         <nav class="nav-menu">
             <a href="index.html" class="nav-link">Beranda</a>
             <a href="layanan.html" class="nav-link active">Layanan</a>
+            <a href="portofolio.html" class="nav-link">Portofolio</a>
             <a href="tentang.html" class="nav-link">Tentang</a>
-            <a href="#" class="nav-link btn-contact" id="consultBtnNav">Konsultasi</a>
+            <a href="blog.html" class="nav-link">Blog</a>
+            <a href="kontak.html" class="nav-link btn-contact">Booking</a>
         </nav>
     </div>
 </header>
 
-<!-- PAGE TITLE -->
 <section class="page-title">
     <h1>Layanan Kami</h1>
     <p>Solusi lengkap untuk kebutuhan digital dan teknologi Anda</p>
 </section>
 
-<!-- LAYANAN GRID -->
-<section class="container">
-    <div class="card service-card">
-        <div class="service-icon"><span class="material-icons">computer</span></div>
-        <h2>Service Laptop</h2>
-        <p>Perbaikan laptop, ganti sparepart, bersihkan debu, dan optimasi performa</p>
-        <div class="price-tag">Mulai Rp50.000</div>
+<section class="services-detailed">
+    <div class="service-category">
+        <h2><span class="material-icons">computer</span> Hardware & Software</h2>
+        <div class="services-grid">
+            <div class="service-item" id="laptop">
+                <div class="service-icon">🔧</div>
+                <h3>Service Laptop</h3>
+                <p>Perbaikan laptop, ganti sparepart, bersihkan debu, optimasi performa, dan penggantian thermal paste.</p>
+                <div class="service-price">Mulai Rp50.000</div>
+                <ul class="service-features">
+                    <li>✓ Diagnosa gratis</li>
+                    <li>✓ Garansi 1 bulan</li>
+                    <li>✓ Sparepart original</li>
+                </ul>
+                <a href="kontak.html" class="service-btn">Pesan Sekarang</a>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">💿</div>
+                <h3>Install Ulang OS</h3>
+                <p>Install Windows 10/11, Linux, driver, dan software yang dibutuhkan. Backup data sebelum install.</p>
+                <div class="service-price">Mulai Rp80.000</div>
+                <ul class="service-features">
+                    <li>✓ Windows/Linux/macOS</li>
+                    <li>✓ + Software gratis</li>
+                    <li>✓ Garansi 7 hari</li>
+                </ul>
+                <a href="kontak.html" class="service-btn">Pesan Sekarang</a>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">🛡️</div>
+                <h3>Anti Virus & Security</h3>
+                <p>Pembersihan virus, instalasi antivirus, proteksi data, dan firewall configuration.</p>
+                <div class="service-price">Mulai Rp60.000</div>
+                <ul class="service-features">
+                    <li>✓ Scan malware total</li>
+                    <li>✓ Install antivirus</li>
+                    <li>✓ Tips keamanan</li>
+                </ul>
+                <a href="kontak.html" class="service-btn">Pesan Sekarang</a>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">⚡</div>
+                <h3>Upgrade RAM/SSD</h3>
+                <p>Upgrade RAM, ganti HDD ke SSD, optimasi performa laptop agar lebih cepat.</p>
+                <div class="service-price">Mulai Rp100.000</div>
+                <ul class="service-features">
+                    <li>✓ Rekomendasi part</li>
+                    <li>✓ Install & setting</li>
+                    <li>✓ Garansi 3 bulan</li>
+                </ul>
+                <a href="kontak.html" class="service-btn">Pesan Sekarang</a>
+            </div>
+        </div>
     </div>
 
-    <div class="card service-card">
-        <div class="service-icon"><span class="material-icons">settings</span></div>
-        <h2>Install Ulang OS</h2>
-        <p>Install Windows, Linux, driver, dan software yang dibutuhkan</p>
-        <div class="price-tag">Mulai Rp80.000</div>
-    </div>
-
-    <div class="card service-card">
-        <div class="service-icon"><span class="material-icons">brush</span></div>
-        <h2>Desain Grafis</h2>
-        <p>Logo, poster, banner, konten sosial media, dan branding UMKM</p>
-        <div class="price-tag">Mulai Rp100.000</div>
-    </div>
-
-    <div class="card service-card">
-        <div class="service-icon"><span class="material-icons">video_call</span></div>
-        <h2>Editing Video</h2>
-        <p>Editing video pendek, YouTube, TikTok, dan konten promosi</p>
-        <div class="price-tag">Mulai Rp150.000</div>
-    </div>
-
-    <div class="card service-card">
-        <div class="service-icon"><span class="material-icons">description</span></div>
-        <h2>Template Digital</h2>
-        <p>Template PowerPoint, Canva, CV, dan dokumen profesional</p>
-        <div class="price-tag">Mulai Rp25.000</div>
-    </div>
-
-    <div class="card service-card">
-        <div class="service-icon"><span class="material-icons">security</span></div>
-        <h2>Anti Virus & Security</h2>
-        <p>Pembersihan virus, instalasi antivirus, dan proteksi data</p>
-        <div class="price-tag">Mulai Rp60.000</div>
+    <div class="service-category" id="desain">
+        <h2><span class="material-icons">brush</span> Desain & Kreatif</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <div class="service-icon">🎨</div>
+                <h3>Desain Grafis</h3>
+                <p>Logo, poster, banner, konten sosial media, dan branding untuk UMKM.</p>
+                <div class="service-price">Mulai Rp100.000</div>
+                <ul class="service-features">
+                    <li>✓ 3x revisi gratis</li>
+                    <li>✓ File source diberikan</li>
+                    <li>✓ Cepat 1-2 hari</li>
+                </ul>
+                <a href="kontak.html" class="service-btn">Pesan Sekarang</a>
+            </div>
+            <div class="service-item" id="video">
+                <div class="service-icon">🎬</div>
+                <h3>Editing Video</h3>
+                <p>Editing video pendek, YouTube, TikTok, Instagram Reels, dan konten promosi.</p>
+                <div class="service-price">Mulai Rp150.000</div>
+                <ul class="service-features">
+                    <li>✓ Custom template</li>
+                    <li>✓ Transisi & efek</li>
+                    <li>✓ Musik & subtitle</li>
+                </ul>
+                <a href="kontak.html" class="service-btn">Pesan Sekarang</a>
+            </div>
+            <div class="service-item" id="template">
+                <div class="service-icon">📄</div>
+                <h3>Template Digital</h3>
+                <p>Template PowerPoint, Canva, CV, proposal, dan dokumen profesional.</p>
+                <div class="service-price">Mulai Rp25.000</div>
+                <ul class="service-features">
+                    <li>✓ Edit sesuai brand</li>
+                    <li>✓ File siap pakai</li>
+                    <li>✓ Unlimited revisi</li>
+                </ul>
+                <a href="kontak.html" class="service-btn">Pesan Sekarang</a>
+            </div>
+            <div class="service-item">
+                <div class="service-icon">📸</div>
+                <h3>Edit Foto</h3>
+                <p>Editing foto produk, background removal, color grading, dan retouching.</p>
+                <div class="service-price">Mulai Rp30.000</div>
+                <ul class="service-features">
+                    <li>✓ Background removal</li>
+                    <li>✓ Color correction</li>
+                    <li>✓ Cepat 1 hari</li>
+                </ul>
+                <a href="kontak.html" class="service-btn">Pesan Sekarang</a>
+            </div>
+        </div>
     </div>
 </section>
 
-<!-- FOOTER -->
-<footer>
-    <div class="footer-social">
-        📱 <strong>@jtech.official</strong> 
-        <span>|</span> 
-        💬 <strong>+62 815-4113-1863</strong>
-        <span>|</span>
-        📧 <strong>jtech@digital.com</strong>
+<section class="faq-section">
+    <div class="section-header">
+        <h2>FAQ - Pertanyaan Umum</h2>
     </div>
-    <p>© 2026 J-TECH Digital & Tech Service — Solusi Teknologi & Kreatif</p>
+    <div class="faq-grid">
+        <div class="faq-item">
+            <h3>❓ Apakah ada garansi?</h3>
+            <p>Ya, semua layanan service laptop mendapat garansi 1-3 bulan tergantung jenis service.</p>
+        </div>
+        <div class="faq-item">
+            <h3>❓ Berapa lama proses pengerjaan?</h3>
+            <p>Service laptop 1-3 hari, desain 1-2 hari, editing video 2-3 hari tergantung kompleksitas.</p>
+        </div>
+        <div class="faq-item">
+            <h3>❓ Apakah bisa konsultasi dulu?</h3>
+            <p>Tentu! Konsultasi GRATIS sebelum order. Hubungi kami via WhatsApp atau Instagram.</p>
+        </div>
+        <div class="faq-item">
+            <h3>❓ Apakah melayani luar kota?</h3>
+            <p>Untuk layanan digital (desain, template, editing) bisa via online. Service laptop hanya untuk area Jabodetabek.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-col">
+            <h3>J-TECH</h3>
+            <p>Digital & Tech Service for Modern Generation.</p>
+            <div class="footer-socials">
+                <a href="https://instagram.com/jtech.official" target="_blank">📷 IG</a>
+                <a href="https://wa.me/6281541131863" target="_blank">💬 WA</a>
+                <a href="mailto:jtech@digital.com">📧 Email</a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h4>Layanan</h4>
+            <a href="#laptop">Service Laptop</a>
+            <a href="#desain">Desain Grafis</a>
+            <a href="#video">Editing Video</a>
+            <a href="#template">Template Digital</a>
+        </div>
+        <div class="footer-col">
+            <h4>Informasi</h4>
+            <a href="tentang.html">Tentang Kami</a>
+            <a href="portofolio.html">Portofolio</a>
+            <a href="blog.html">Blog</a>
+            <a href="kontak.html">Kontak</a>
+        </div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 J-TECH Digital & Tech Service</p></div>
 </footer>
 
 <script src="script.js"></script>
 </body>
-</html> 
+</html>
